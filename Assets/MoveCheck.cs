@@ -20,6 +20,11 @@ public class MoveCheck : MonoBehaviour {
         else
             anim.SetBool("isWalking", false);
 
+        if (Input.GetMouseButton(0))
+            anim.SetBool("isAttacking", true);
+        else
+            anim.SetBool("isAttacking", false);
+
         anim.SetFloat("isRunning", transform.parent.parent.GetComponent<GoodMover>().speed);
 
 	}

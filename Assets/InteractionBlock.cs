@@ -32,10 +32,10 @@ public class InteractionBlock : MonoBehaviour {
                 //        tempCrackingBlock
 
                 if (Input.GetMouseButton(0))
-                hit.transform.gameObject.GetComponent<BlockState>().Cracking();
-            else
-                hit.transform.gameObject.GetComponent<BlockState>().Regeneration();
-        }
+                    hit.transform.gameObject.GetComponent<BlockState>().Cracking();
+                else
+                    hit.transform.gameObject.GetComponent<BlockState>().Regeneration();
+            }
         }
 
 

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcgame.Plugins", "Mcgame.Plugins.csproj", "{A9C638DC-85FE-5D9F-BF3B-25E2DE6BC293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcgame", "Mcgame.csproj", "{984DD36D-2204-A3A0-3928-049FEE436019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcgame.Editor.Plugins", "Mcgame.Editor.Plugins.csproj", "{664A0AA7-9618-4C46-025F-277171AC09E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9C638DC-85FE-5D9F-BF3B-25E2DE6BC293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C638DC-85FE-5D9F-BF3B-25E2DE6BC293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C638DC-85FE-5D9F-BF3B-25E2DE6BC293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C638DC-85FE-5D9F-BF3B-25E2DE6BC293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984DD36D-2204-A3A0-3928-049FEE436019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984DD36D-2204-A3A0-3928-049FEE436019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984DD36D-2204-A3A0-3928-049FEE436019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984DD36D-2204-A3A0-3928-049FEE436019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664A0AA7-9618-4C46-025F-277171AC09E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664A0AA7-9618-4C46-025F-277171AC09E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664A0AA7-9618-4C46-025F-277171AC09E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664A0AA7-9618-4C46-025F-277171AC09E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
