@@ -65,7 +65,11 @@ public class BlockState : MonoBehaviour {
         Statecounter++;
 
         if (Statecounter == Cracks.Length)
+        {
+            var ef = Instantiate(Ef, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Destroy(ef.gameObject, 10f);
+        }
         else
             transform.GetComponent<Renderer>().material.SetTexture("_DetailMask", Cracks[Statecounter]);
     }
