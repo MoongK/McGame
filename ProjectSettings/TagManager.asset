@@ -7,6 +7,10 @@ TagManager:
   - Ground
   - Block
   - mantle
+  - handBlock
+  - TripleCam
+  - GameMgr
+  - MiniMap
   layers:
   - Default
   - TransparentFX
@@ -19,7 +23,7 @@ TagManager:
   - Player
   - Block
   - Floor
-  - 
+  - handBlock
   - 
   - 
   - 
