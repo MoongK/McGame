@@ -289,9 +289,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CubeJumper\Player.cs" />
-    <Compile Include="Assets\ExitButton.cs" />
     <Compile Include="Assets\Resources\BlockState.cs" />
     <Compile Include="Assets\Resources\Crosshair.cs" />
+    <Compile Include="Assets\Resources\ExitButton.cs" />
+    <Compile Include="Assets\Resources\GameOverCheck.cs" />
     <Compile Include="Assets\Resources\GoodMouseRotate.cs" />
     <Compile Include="Assets\Resources\GoodMover.cs" />
     <Compile Include="Assets\Resources\HeadMove.cs" />
@@ -299,9 +300,11 @@
     <Compile Include="Assets\Resources\MoveCheck.cs" />
     <Compile Include="Assets\Resources\MyBlockMesh.cs" />
     <Compile Include="Assets\Resources\OnMouseSystem.cs" />
+    <Compile Include="Assets\Resources\RetryMenu.cs" />
+    <Compile Include="Assets\Resources\RetryUpdate.cs" />
+    <Compile Include="Assets\Resources\SceneMgr.cs" />
     <Compile Include="Assets\Resources\SightSwitching.cs" />
     <Compile Include="Assets\Resources\TripleSightPos.cs" />
-    <Compile Include="Assets\SceneMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
