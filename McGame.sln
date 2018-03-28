@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McGame", "McGame.csproj", "{0936CE93-0DF1-A099-96F7-E9AF329355D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McGame.Plugins", "McGame.Plugins.csproj", "{B11F04E5-D08F-F080-FF5E-14237693C27F}"

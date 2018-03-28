@@ -8,10 +8,11 @@ TagManager:
   - Block
   - mantle
   - handBlock
-  - TripleCam
   - GameMgr
   - MiniMap
   - GameOver
+  - SecondCam
+  - Plant
   layers:
   - Default
   - TransparentFX
@@ -26,9 +27,9 @@ TagManager:
   - Floor
   - handBlock
   - GameOverBG
-  - 
-  - 
-  - 
+  - PlayerIcon
+  - MobIcon
+  - Plant
   - 
   - 
   - 

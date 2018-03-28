@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RetryScene.unity
+- path: Assets/McPlayer.unity
   isLoaded: 1
   isActive: 1

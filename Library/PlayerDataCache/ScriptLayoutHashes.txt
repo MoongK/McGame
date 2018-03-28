@@ -148,6 +148,7 @@ a90e94673f50d2237c1b971c138660c6 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GoodMouseRotate
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MoveCheck
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameOverCheck
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnMouseSystem
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -192,4 +193,4 @@ b7f557c19cce3b6f593e26edfe1ec859 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.GoodMover
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameOverCheck
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Behaviour
