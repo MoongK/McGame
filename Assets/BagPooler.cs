@@ -17,8 +17,10 @@ public class BagPooler : MonoBehaviour {
         ob.transform.SetParent(transform);
         ob.SetActive(false);
         itemInBag.Add(ob);
+        print("List : " + itemInBag.Count);
     }
 
+    
     void OutofBag(GameObject ob)
     {
 

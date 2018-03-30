@@ -73,7 +73,11 @@ public class InteractionBlock : MonoBehaviour {
 
     void MakeBlock(Object _block, RaycastHit _hit)
     {
-        Instantiate(_block, _hit.transform.position + _hit.normal, Quaternion.identity);
-        // after bag system
+        var tempBlock = Instantiate(_block);
+
+        GameObject Blocking;
+        Blocking = tempBlock as GameObject;
+        Blocking.transform.position = _hit.transform.position + _hit.normal;
+        Blocking.transform.rotation = Quaternion.identity;
     }
 }

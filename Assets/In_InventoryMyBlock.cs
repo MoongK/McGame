@@ -37,4 +37,9 @@ public class In_InventoryMyBlock : MonoBehaviour {
         MyItemNum.text = ItemCounter.ToString();
         ButtonName.text = gameObject.tag;
     }
+
+    public void ItemOut()
+    {
+        ItemCounter--;
+    }
 }
