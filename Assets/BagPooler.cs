@@ -1,16 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class BagPooler : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public List<GameObject> itemInBag;
+
+    private void Awake()
+    {
+        itemInBag = new List<GameObject>();
+    }
+
+    public void BagPooling(GameObject ob)
+    {
+        ob.transform.SetParent(transform);
+        ob.SetActive(false);
+        itemInBag.Add(ob);
+    }
+
+    void OutofBag(GameObject ob)
+    {
+
+    }
 }

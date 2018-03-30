@@ -8,7 +8,6 @@ public class Behaviour : MonoBehaviour {
 
 	void Start () {
         GameObject.Find("MyUI").transform.Find("Inventory").gameObject.SetActive(false);
-
     }
 	
 	void Update () {

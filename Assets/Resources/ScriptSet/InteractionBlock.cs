@@ -23,9 +23,12 @@ public class InteractionBlock : MonoBehaviour {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 4f))
+        int ignoreMask = (1 << LayerMask.NameToLayer("ItemSkin")) | (1 << LayerMask.NameToLayer("Item"));
+        ignoreMask = ~ignoreMask;
+        
+        if(Physics.Raycast(ray, out hit, 4f, ignoreMask))
         {
-            if (hit.collider.CompareTag("Block"))
+            if ((hit.collider.gameObject.layer == 9) && !(hit.collider.CompareTag("mantle")))
             {
                 if (Input.GetMouseButton(0))
                     hit.transform.gameObject.GetComponent<BlockState>().Cracking();
@@ -33,12 +36,11 @@ public class InteractionBlock : MonoBehaviour {
                     hit.transform.gameObject.GetComponent<BlockState>().Regeneration();
             }
 
-            if (hit.collider.CompareTag("Plant"))
+            if (hit.collider.gameObject.layer == 15 /* planet*/)
             {
                 if (Input.GetMouseButton(0))
                 {
-                    //Destroy(hit.transform.gameObject);
-                    worldPool.GetComponent<WorldPooler>().Pooling(hit.transform.gameObject);
+                    worldPool.GetComponent<WorldPooler>().Pooling(hit.transform.gameObject); // destroy
                 }
                 else
                     return;
@@ -49,7 +51,7 @@ public class InteractionBlock : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(1)) {
                 if (block != null)
-                    Instantiate(block, hit.transform.position + hit.normal, Quaternion.identity);
+                    MakeBlock(block, hit);
             }  
         }
 
@@ -58,7 +60,7 @@ public class InteractionBlock : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Alpha2))
             block = Resources.Load("BlockInstance/StoneBlock");
         if(Input.GetKeyDown(KeyCode.Alpha3))
-            block = Resources.Load("BlockInstance/hardBlock");
+            block = Resources.Load("BlockInstance/HardBlock");
         if (Input.GetKeyDown(KeyCode.Alpha4))
             block = Resources.Load("BlockInstance/GrassBlock");
         if (Input.GetKeyDown(KeyCode.Alpha5))
@@ -67,5 +69,11 @@ public class InteractionBlock : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
             block = null;
+    }
+
+    void MakeBlock(Object _block, RaycastHit _hit)
+    {
+        Instantiate(_block, _hit.transform.position + _hit.normal, Quaternion.identity);
+        // after bag system
     }
 }

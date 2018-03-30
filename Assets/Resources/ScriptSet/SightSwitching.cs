@@ -17,7 +17,10 @@ public class SightSwitching : MonoBehaviour {
         isFps = true;
         Fps.GetComponent<Camera>().depth = 1;
         Tps.GetComponent<Camera>().depth = 0;
-        
+
+        Fps.gameObject.tag = "MainCamera";
+        Tps.gameObject.tag = "SecondCam";
+
     }
 
     void Update ()

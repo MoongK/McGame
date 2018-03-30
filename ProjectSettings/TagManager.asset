@@ -13,6 +13,12 @@ TagManager:
   - GameOver
   - SecondCam
   - Plant
+  - BackPack
+  - Dirt
+  - Stone
+  - Hard
+  - Flower
+  - Grass
   layers:
   - Default
   - TransparentFX
@@ -30,8 +36,8 @@ TagManager:
   - PlayerIcon
   - MobIcon
   - Plant
-  - 
-  - 
+  - Item
+  - ItemSkin
   - 
   - 
   - 

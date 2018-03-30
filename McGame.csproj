@@ -291,8 +291,10 @@
   <ItemGroup>
     <Compile Include="Assets\BagPooler.cs" />
     <Compile Include="Assets\Behaviour.cs" />
+    <Compile Include="Assets\BlockItem.cs" />
     <Compile Include="Assets\CubeJumper\Player.cs" />
     <Compile Include="Assets\Grass And Flowers Pack 1\Example Scene\SimpleTextureDrawing.cs" />
+    <Compile Include="Assets\In_InventoryMyBlock.cs" />
     <Compile Include="Assets\Resources\ScriptSet\BlockState.cs" />
     <Compile Include="Assets\Resources\ScriptSet\Crosshair.cs" />
     <Compile Include="Assets\Resources\ScriptSet\ExitButton.cs" />

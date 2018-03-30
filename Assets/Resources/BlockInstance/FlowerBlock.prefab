@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 65066706969882452}
   m_Layer: 15
   m_Name: FlowerBlock
-  m_TagString: Plant
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
